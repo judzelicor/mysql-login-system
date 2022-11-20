@@ -28,6 +28,5 @@ class Database {
 }
 
 const database = new Database();
-console.log( process.env.MYSQL_DATABASE_HOST, "database.js")
 
 export default database;
