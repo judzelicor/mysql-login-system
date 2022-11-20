@@ -1,0 +1,9 @@
+# Node
+node_modules
+
+# MacOS
+.DS_Store
+
+# Environment Variables
+.env
+.env.local
