@@ -403,11 +403,13 @@ a {
     text-decoration: none;
 }
 
-.formGroup__sup-k9J0 {
+.formGroup__sup-k9J0,
+.formGroup__lip-m3Fq {
     margin-bottom: 1rem;
 }
 
-.formGroupLabelWrapper__sup-x6Qr {
+.formGroupLabelWrapper__sup-x6Qr,
+.formGroupLabelWrapper__lip-mp5T {
     margin-bottom: 0.75rem;
 }
 
@@ -427,7 +429,8 @@ a {
     transition: box-shadow 300ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.formGroupInput__sup-3Q8g::placeholder {
+.formGroupInput__sup-3Q8g::placeholder,
+.formGroupInput__lip-q3Vi::placeholder {
     color: #ccc;
     font-family: "Gantari";
     opacity: 1;

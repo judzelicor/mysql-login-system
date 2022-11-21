@@ -4,6 +4,10 @@ import database from "./database.js";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 import hbs from "hbs";
+import {
+    loginRoute, 
+    signupRoute
+} from "./routes/index.js";
 
 dotenv.config({ path: ".env.local" });
 
@@ -19,6 +23,8 @@ let __dirname;
 server = express();
 
 port = process.env.PORT;
+
+server.use(express.json());
 
 
 // Define __dirname in ES module scope
@@ -42,13 +48,8 @@ server.get("/", (request, response) => {
     response.render("index")
 })
 
-server.get("/signup", (request, response) => {
-    response.render("signup")
-})
-
-server.get("/login", (request, response) => {
-    response.render("login")
-})
+server.use("/signup", signupRoute)
+server.use("/login", loginRoute);
 
 server.listen(port, () => {
     console.log(`Login System is listening to port ${ port }`);
